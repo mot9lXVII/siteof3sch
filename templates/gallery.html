@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Галерея{% endblock %}
+
+{% block content %}
+<section class="fade-in">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Галерея</h2>
+    <p class="text-base md:text-lg text-gray-600 mb-6">Наши звёзды — ученики, которые вдохновляют своими достижениями!</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+        <div class="bg-white p-3 md:p-4 rounded-lg glow-3d max-w-sm mx-auto">
+            <div class="relative w-full aspect-[4/3]">
+                <img src="{{ url_for('static', filename='images/artem.jpg') }}" alt="Артём Петров" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <h4 class="text-lg md:text-xl font-medium text-gray-800 mt-2">Артём Петров</h4>
+            <p class="text-base md:text-lg text-gray-600">Отличник, победитель олимпиад по математике и физике. Активный участник школьных научных конференций.</p>
+        </div>
+        <div class="bg-white p-3 md:p-4 rounded-lg glow-3d max-w-sm mx-auto">
+            <div class="relative w-full aspect-[4/3]">
+                <img src="{{ url_for('static', filename='images/timur.jpg') }}" alt="Потапчук Тимур" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <h4 class="text-lg md:text-xl font-medium text-gray-800 mt-2">Потапчук Тимур</h4>
+            <p class="text-base md:text-lg text-gray-600">Отличник, звезда школьных олимпиад по химии и биологии. Лидер экологического клуба школы.</p>
+        </div>
+        <div class="bg-white p-3 md:p-4 rounded-lg glow-3d max-w-sm mx-auto">
+            <div class="relative w-full aspect-[4/3]">
+                <img src="{{ url_for('static', filename='images/maxim.jpg') }}" alt="Максим Касперович" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <h4 class="text-lg md:text-xl font-medium text-gray-800 mt-2">Максим Касперович</h4>
+            <p class="text-base md:text-lg text-gray-600">Отличник, чемпион школьных соревнований по информатике. Разработал приложение для расписания уроков.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

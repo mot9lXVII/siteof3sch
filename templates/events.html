@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}События{% endblock %}
+
+{% block content %}
+<section class="fade-in">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">События</h2>
+    <!-- Carousel -->
+    <div class="carousel relative overflow-hidden mb-8 px-2 md:px-0">
+        <div class="carousel-inner flex transition-transform duration-500">
+            <div class="carousel-item min-w-full bg-white p-4 md:p-6 rounded-lg glow-3d">
+                <h3 class="text-lg md:text-xl font-medium text-gray-800">Республиканская олимпиада</h3>
+                <p class="text-base md:text-lg text-gray-600">Команда из 15 учеников готовится к олимпиадам по математике, биологии и другим предметам. Цель — золото! 🏆</p>
+            </div>
+            <div class="carousel-item min-w-full bg-white p-4 md:p-6 rounded-lg glow-3d">
+                <h3 class="text-lg md:text-xl font-medium text-gray-800">Областная спартакиада</h3>
+                <p class="text-base md:text-lg text-gray-600">Волейбол, футбол, лёгкая атлетика — наши спортсмены участвуют в XXXVII спартакиаде школьников! 💪</p>
+            </div>
+            <div class="carousel-item min-w-full bg-white p-4 md:p-6 rounded-lg glow-3d">
+                <h3 class="text-lg md:text-xl font-medium text-gray-800">Театральная премьера</h3>
+                <p class="text-base md:text-lg text-gray-600">Студия готовит спектакль «Ромео и Джульетта» к Новому году. Премьера в декабре! 🎭</p>
+            </div>
+            <div class="carousel-item min-w-full bg-white p-4 md:p-6 rounded-lg glow-3d">
+                <h3 class="text-lg md:text-xl font-medium text-gray-800">Благотворительная ярмарка</h3>
+                <p class="text-base md:text-lg text-gray-600">Собираем средства для местной больницы через ярмарку поделок и выпечки! ❤️</p>
+            </div>
+            <div class="carousel-item min-w-full bg-white p-4 md:p-6 rounded-lg glow-3d">
+                <h3 class="text-lg md:text-xl font-medium text-gray-800">Акция «Стань заметнее»</h3>
+                <p class="text-base md:text-lg text-gray-600">Совместно с ГАИ раздаём фликеры младшеклассникам для безопасности на дорогах! 🚸</p>
+            </div>
+        </div>
+        <button class="carousel-prev absolute top-1/2 left-2 md:left-4 transform -translate-y-1/2 bg-peach-400 text-white p-3 md:p-2 rounded-full text-lg md:text-base">←</button>
+        <button class="carousel-next absolute top-1/2 right-2 md:right-4 transform -translate-y-1/2 bg-peach-400 text-white p-3 md:p-2 rounded-full text-lg md:text-base">→</button>
+    </div>
+    <!-- Additional Events -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        <div class="bg-white p-4 md:p-6 rounded-lg glow-3d">
+            <h3 class="text-lg md:text-xl font-medium text-gray-800">ProfSkills Belarus 2025</h3>
+            <p class="text-base md:text-lg text-gray-600">Команда робототехников готовит проект для национального чемпионата! 🤖</p>
+        </div>
+        <div class="bg-white p-4 md:p-6 rounded-lg glow-3d">
+            <h3 class="text-lg md:text-xl font-medium text-gray-800">Экологический марафон</h3>
+            <p class="text-base md:text-lg text-gray-600">Убираем парк и высаживаем деревья в акции «Зелёный город»! 🌳</p>
+        </div>
+        <div class="bg-white p-4 md:p-6 rounded-lg glow-3d">
+            <h3 class="text-lg md:text-xl font-medium text-gray-800">Игра «Что? Где? Когда?»</h3>
+            <p class="text-base md:text-lg text-gray-600">Наша команда заняла 5-е место в районной игре для интеллектуалов! 🧠</p>
+        </div>
+        <div class="bg-white p-4 md:p-6 rounded-lg glow-3d">
+            <h3 class="text-lg md:text-xl font-medium text-gray-800">Конкурс «Украсим Беларусь цветами»</h3>
+            <p class="text-base md:text-lg text-gray-600">Победа в районном этапе за проект «Сад для насекомых»! 🌸</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

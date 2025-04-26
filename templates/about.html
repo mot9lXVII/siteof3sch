@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}О школе{% endblock %}
+
+{% block content %}
+<section class="fade-in">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">О школе</h2>
+    <div class="bg-white p-6 md:p-8 rounded-lg glow-3d mb-8">
+        <p class="text-base md:text-lg text-gray-600 leading-relaxed mb-4">
+            Средняя школа №3 г. Ивацевичи, основанная в 1982 году, — ведущее образовательное учреждение города, рассчитанное на 1176 учащихся. 
+            Под руководством Елены Васильевны Левданской школа реализует программы углублённого изучения математики, языков и наук, поддерживая высокие стандарты образования.
+        </p>
+        <p class="text-base md:text-lg text-gray-600 leading-relaxed">
+            У нас действуют кружки робототехники, театральная студия, хор и спортивные секции (волейбол, футбол). 
+            Школа гордится традициями: ежегодный «День талантов», экологические акции и благотворительные ярмарки. 
+            Музей истории образования, открытый в 2002 году, хранит память о наших достижениях.
+        </p>
+    </div>
+
+    <!-- Истории -->
+    <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">Истории нашей школы</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-white p-6 rounded-lg glow-3d">
+            <h4 class="text-xl md:text-2xl font-medium text-gray-800 mb-2">Экологическая победа</h4>
+            <p class="text-base md:text-lg text-gray-600">
+                В 2022 году клуб «Азбука школьника-цветовода» выиграл республиканский конкурс «Зеленая школа» в номинации «Зеленые следочки», создав сад для насекомых. Проект получил признание на районном и областном уровнях.
+            </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg glow-3d">
+            <h4 class="text-xl md:text-2xl font-medium text-gray-800 mb-2">Спасение школьного сада</h4>
+            <p class="text-base md:text-lg text-gray-600">
+                В 2019 году ученики и учителя спасли школьный сад от вырубки, организовав субботники и посадив новые деревья. 
+                «Зелёный уголок» стал местом для уроков на свежем воздухе.
+            </p>
+        </div>
+    </div>
+    <div class="bg-white p-6 rounded-lg glow-3d">
+        <h4 class="text-xl md:text-2xl font-medium text-gray-800 mb-2">Творческий триумф</h4>
+        <p class="text-base md:text-lg text-gray-600">
+            В 2021 году школьная газета «Переменка» заняла первое место в международном конкурсе стенгазет, посвящённом экологии. 
+            Ученики и руководитель Людмила Николаевна Бахур создали проект, который вдохновил другие школы.
+        </p>
+    </div>
+</section>
+{% endblock %}

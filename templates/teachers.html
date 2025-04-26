@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+
+{% block title %}Педагогический коллектив{% endblock %}
+
+{% block content %}
+<section class="fade-in">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Педагогический коллектив</h2>
+    <p class="text-base md:text-lg text-gray-600 mb-6">Наши учителя — профессионалы, вдохновляющие учеников на достижения!</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+        <div class="bg-white p-3 md:p-4 rounded-lg glow-3d max-w-sm mx-auto">
+            <div class="relative w-full aspect-[4/3]">
+                <img src="{{ url_for('static', filename='images/teachers/informatika.jpg') }}" alt="Витковская Татьяна Анатольевна" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <h4 class="text-lg md:text-xl font-medium text-gray-800 mt-2">Витковская Татьяна Анатольевна</h4>
+            <p class="text-base md:text-lg text-gray-600">Учитель информатики. Награждена дипломом за участие в республиканской конференции.</p>
+        </div>
+        <div class="bg-white p-3 md:p-4 rounded-lg glow-3d max-w-sm mx-auto">
+            <div class="relative w-full aspect-[4/3]">
+                <img src="{{ url_for('static', filename='images/teachers/tryd.jpg') }}" alt="Омелящик Сергей Вячеславович" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <h4 class="text-lg md:text-xl font-medium text-gray-800 mt-2">Омелящик Сергей Вячеславович</h4>
+            <p class="text-base md:text-lg text-gray-600">Учитель трудового обучения. Подготовил учеников к победам в экологических конкурсах.</p>
+        </div>
+        <div class="bg-white p-3 md:p-4 rounded-lg glow-3d max-w-sm mx-auto">
+            <div class="relative w-full aspect-[4/3]">
+                <img src="{{ url_for('static', filename='images/teachers/matem.jpg') }}" alt="Ермалович Юлия Михайловна" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <h4 class="text-lg md:text-xl font-medium text-gray-800 mt-2">Ермалович Юлия Михайловна</h4>
+            <p class="text-base md:text-lg text-gray-600">Учитель математики. Награждена грамотой отдела по образованию Ивацевичского райисполкома.</p>
+        </div>
+        <div class="bg-white p-3 md:p-4 rounded-lg glow-3d max-w-sm mx-auto">
+            <div class="relative w-full aspect-[4/3]">
+                <img src="{{ url_for('static', filename='images/teachers/inga.jpg') }}" alt="Вакулич Инга Юрьевна" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <h4 class="text-lg md:text-xl font-medium text-gray-800 mt-2">Вакулич Инга Юрьевна</h4>
+            <p class="text-base md:text-lg text-gray-600">Учитель. Поздравлена за результативное участие в республиканской конференции.</p>
+        </div>
+        <div class="bg-white p-3 md:p-4 rounded-lg glow-3d max-w-sm mx-auto">
+            <div class="relative w-full aspect-[4/3]">
+                <img src="{{ url_for('static', filename='images/teachers/bel.jpg') }}" alt="Полещук Галина Михайловна" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <h4 class="text-lg md:text-xl font-medium text-gray-800 mt-2">Полещук Галина Михайловна</h4>
+            <p class="text-base md:text-lg text-gray-600">Учитель белорусского языка и литературы. Награждена Почётной грамотой главного управления по образованию Брестского облисполкома.</p>
+        </div>
+        <div class="bg-white p-3 md:p-4 rounded-lg glow-3d max-w-sm mx-auto">
+            <div class="relative w-full aspect-[4/3]">
+                <img src="{{ url_for('static', filename='images/teachers/syhonosik.jpg') }}" alt="Сухоносик Светлана Васильевна" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <h4 class="text-lg md:text-xl font-medium text-gray-800 mt-2">Сухоносик Светлана Васильевна</h4>
+            <p class="text-base md:text-lg text-gray-600">Заместитель директора по учебной работе. Награждена грамотой Ивацевичского райисполкома.</p>
+        </div>
+        <div class="bg-white p-3 md:p-4 rounded-lg glow-3d max-w-sm mx-auto">
+            <div class="relative w-full aspect-[4/3]">
+                <img src="{{ url_for('static', filename='images/teachers/getman.jpg') }}" alt="Гетьман Ольга Иосифовна" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <h4 class="text-lg md:text-xl font-medium text-gray-800 mt-2">Гетьман Ольга Иосифовна</h4>
+            <p class="text-base md:text-lg text-gray-600">Учитель. Награждена Почётной грамотой главного управления по образованию Брестского облисполкома.</p>
+        </div>
+        <div class="bg-white p-3 md:p-4 rounded-lg glow-3d max-w-sm mx-auto">
+            <div class="relative w-full aspect-[4/3]">
+                <img src="{{ url_for('static', filename='images/teachers/hydinsk.jpg') }}" alt="Худинская Олеся Генадьевна" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <h4 class="text-lg md:text-xl font-medium text-gray-800 mt-2">Худинская Олеся Генадьевна</h4>
+            <p class="text-base md:text-lg text-gray-600">Учитель начальных классов. Награждена Почётной грамотой отдела по образованию Ивацевичского райисполкома.</p>
+        </div>
+        <div class="bg-white p-3 md:p-4 rounded-lg glow-3d max-w-sm mx-auto">
+            <div class="relative w-full aspect-[4/3]">
+                <img src="{{ url_for('static', filename='images/teachers/levd.jpg') }}" alt="Левданский Вячеслав Александрович" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <h4 class="text-lg md:text-xl font-medium text-gray-800 mt-2">Левданский Вячеслав Александрович</h4>
+            <p class="text-base md:text-lg text-gray-600">Учитель физической культуры. Награждён дипломом за участие в республиканской конференции.</p>
+        </div>
+        <div class="bg-white p-3 md:p-4 rounded-lg glow-3d max-w-sm mx-auto">
+            <div class="relative w-full aspect-[4/3]">
+                <img src="{{ url_for('static', filename='images/teachers/kylec.jpg') }}" alt="Кулецкая Татьяна Васильевна" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <h4 class="text-lg md:text-xl font-medium text-gray-800 mt-2">Кулецкая Татьяна Васильевна</h4>
+            <p class="text-base md:text-lg text-gray-600">Учитель начальных классов. Награждена Почётной грамотой отдела по образованию Ивацевичского райисполкома.</p>
+        </div>
+        <div class="bg-white p-3 md:p-4 rounded-lg glow-3d max-w-sm mx-auto">
+            <div class="relative w-full aspect-[4/3]">
+                <img src="{{ url_for('static', filename='images/teachers/san.jpg') }}" alt="Васильчук Александр Александрович" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <h4 class="text-lg md:text-xl font-medium text-gray-800 mt-2">Васильчук Александр Александрович</h4>
+            <p class="text-base md:text-lg text-gray-600">Учитель физической культуры. Награждён дипломом за участие в республиканской конференции.</p>
+        </div>
+        <div class="bg-white p-3 md:p-4 rounded-lg glow-3d max-w-sm mx-auto">
+            <div class="relative w-full aspect-[4/3]">
+                <img src="{{ url_for('static', filename='images/teachers/vaneka.jpg') }}" alt="Ванека Андрей Иванович" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <h4 class="text-lg md:text-xl font-medium text-gray-800 mt-2">Ванека Андрей Иванович</h4>
+            <p class="text-base md:text-lg text-gray-600">Учитель. Поздравлён за результативное участие в республиканской конференции.</p>
+        </div>
+        <div class="bg-white p-3 md:p-4 rounded-lg glow-3d max-w-sm mx-auto">
+            <div class="relative w-full aspect-[4/3]">
+                <img src="{{ url_for('static', filename='images/teachers/himia.jpg') }}" alt="Пилипцевич Наталья Георгиевна" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <h4 class="text-lg md:text-xl font-medium text-gray-800 mt-2">Пилипцевич Наталья Георгиевна</h4>
+            <p class="text-base md:text-lg text-gray-600">Учитель химии. Награждена Почётной грамотой отдела по образованию Ивацевичского райисполкома.</p>
+        </div>
+        <div class="bg-white p-3 md:p-4 rounded-lg glow-3d max-w-sm mx-auto">
+            <div class="relative w-full aspect-[4/3]">
+                <img src="{{ url_for('static', filename='images/teachers/levda.jpg') }}" alt="Левданская Елена Васильевна" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <h4 class="text-lg md:text-xl font-medium text-gray-800 mt-2">Левданская Елена Васильевна</h4>
+            <p class="text-base md:text-lg text-gray-600">Директор школы. Награждена Почётной грамотой главного управления по образованию Брестского облисполкома.</p>
+        </div>
+        <div class="bg-white p-3 md:p-4 rounded-lg glow-3d max-w-sm mx-auto">
+            <div class="relative w-full aspect-[4/3]">
+                <img src="{{ url_for('static', filename='images/teachers/los.jpg') }}" alt="Лось Анна Сергеевна" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <h4 class="text-lg md:text-xl font-medium text-gray-800 mt-2">Лось Анна Сергеевна</h4>
+            <p class="text-base md:text-lg text-gray-600">Учитель биологии. Руководитель клуба «Азбука школьника-цветовода», победившего в конкурсе «Прекрасней станет Брестчина моя».</p>
+        </div>
+        <div class="bg-white p-3 md:p-4 rounded-lg glow-3d max-w-sm mx-auto">
+            <div class="relative w-full aspect-[4/3]">
+                <img src="{{ url_for('static', filename='images/teachers/kononovich.jpg') }}" alt="Кононович Елена Константиновна" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <h4 class="text-lg md:text-xl font-medium text-gray-800 mt-2">Кононович Елена Константиновна</h4>
+            <p class="text-base md:text-lg text-gray-600">Учитель начальных классов. Награждена Почётной грамотой отдела по образованию Ивацевичского райисполкома.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
